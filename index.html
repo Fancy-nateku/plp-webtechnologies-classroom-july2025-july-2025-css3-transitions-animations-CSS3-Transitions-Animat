@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3 Animations & JavaScript Interactions</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <h1 class="logo">AnimXperience</h1>
+        <button id="theme-toggle" class="nav-btn">🌙 Dark Mode</button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">CSS3 & JavaScript Magic</h1>
+        <p class="hero-subtitle">
+          Experience smooth animations and dynamic interactions
+        </p>
+        <button id="cta-btn" class="cta-button">Explore Features</button>
+      </div>
+      <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+    </section>
+
+    <!-- Animation Showcase Section -->
+    <section class="showcase">
+      <h2>CSS3 Animation Gallery</h2>
+
+      <!-- Animated Cards -->
+      <div class="cards-container">
+        <div class="card" id="card-1">
+          <div class="card-icon">🎨</div>
+          <h3>Hover Transitions</h3>
+          <p>Experience smooth CSS transitions on hover</p>
+          <button class="card-btn">Hover Me</button>
+        </div>
+
+        <div class="card" id="card-2">
+          <div class="card-icon">⚡</div>
+          <h3>Keyframe Animations</h3>
+          <p>Watch continuous CSS keyframe animations</p>
+          <button class="card-btn animate-trigger" data-target="card-2">
+            Animate
+          </button>
+        </div>
+
+        <div class="card" id="card-3">
+          <div class="card-icon">🔧</div>
+          <h3>JS Controlled</h3>
+          <p>JavaScript triggered animations</p>
+          <button class="card-btn js-trigger" data-action="bounce">
+            Bounce
+          </button>
+        </div>
+      </div>
+
+      <!-- Animation Playground -->
+      <div class="playground">
+        <h3>Animation Playground</h3>
+        <div class="animation-box" id="animation-box">
+          <span>Animate Me!</span>
+        </div>
+        <div class="controls">
+          <button class="control-btn" data-animation="slide">Slide</button>
+          <button class="control-btn" data-animation="rotate">Rotate</button>
+          <button class="control-btn" data-animation="pulse">Pulse</button>
+          <button class="control-btn" data-animation="colorChange">
+            Color Change
+          </button>
+          <button class="control-btn" id="reset-btn">Reset</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Features Section -->
+    <section class="interactive">
+      <h2>JavaScript Interactive Features</h2>
+
+      <!-- Flip Card -->
+      <div class="flip-container">
+        <div class="flip-card" id="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3>Front Side</h3>
+              <p>Click to flip!</p>
+              <div class="flip-icon">🃏</div>
+            </div>
+            <div class="flip-card-back">
+              <h3>Back Side</h3>
+              <p>Wow! You flipped me!</p>
+              <div class="flip-icon">🎉</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Trigger -->
+      <button id="modal-open" class="modal-btn">Open Modal</button>
+
+      <!-- Calculator Demo -->
+      <div class="calculator">
+        <h3>Area Calculator</h3>
+        <div class="calc-inputs">
+          <input
+            type="number"
+            id="width"
+            placeholder="Width"
+            class="calc-input"
+          />
+          <input
+            type="number"
+            id="height"
+            placeholder="Height"
+            class="calc-input"
+          />
+          <button id="calculate-btn" class="calc-btn">Calculate Area</button>
+        </div>
+        <div id="result" class="result">Result will appear here</div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Interactive Modal</h2>
+        <p>This modal slides in with CSS animations triggered by JavaScript!</p>
+        <button id="modal-animate" class="modal-action-btn">
+          Animate Content
+        </button>
+        <div class="modal-animation-box"></div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2024 AnimXperience - CSS3 & JavaScript Demo</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>j
